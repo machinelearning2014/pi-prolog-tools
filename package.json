@@ -1,0 +1,21 @@
+{
+  "name": "pi-prolog-tools",
+  "version": "1.0.0",
+  "description": "Prolog-first reasoning toolkit for pi: python_exec, prolog_exec, web_search, web_browse, plus reasoning protocol and skills",
+  "keywords": ["pi-package"],
+  "author": "",
+  "license": "MIT",
+  "pi": {
+    "extensions": ["./extensions"],
+    "skills": ["./skills"],
+    "prompts": ["./prompts"],
+    "image": "https://img.shields.io/badge/pi-prolog--tools-blue"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
