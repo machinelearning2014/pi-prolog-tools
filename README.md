@@ -96,13 +96,18 @@ pi-prolog-tools/
 ## Example Session
 
 ```
-User: Is Donald Trump the worst president in US history?
+User: Who should sit next to whom at a dinner party with these constraints?
+  - Alice can't sit next to Bob
+  - Charlie must sit next to Dana
+  - Bob must sit at one end of the table
 
 Agent:
-  → FORMALIZE: prolog_exec with scholarly survey data
-  → REASON: Prolog identifies Trump as the only president ranked #45
-    AND in bottom 5 of all major surveys AND twice impeached with felony conviction
-  → ACT: Responds with plain-language analysis derived from Prolog output
+  → FORMALIZE: prolog_exec with seating facts and adjacency rules
+  → REASON: Prolog derives all valid seating arrangements satisfying constraints
+  → ACT: Responds with plain-language seating plan derived from Prolog output:
+    "Bob must be at one end. Charlie and Dana sit together.
+     Alice can sit at the other end (away from Bob) or across from Charlie.
+     Here are the 4 valid arrangements..."
 ```
 
 ## License
